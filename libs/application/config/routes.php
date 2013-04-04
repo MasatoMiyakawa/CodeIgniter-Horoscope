@@ -40,11 +40,11 @@
 
 $route['404_override'] = '';
 
-//ランキングページ
+//ranking
 $route['default_controller'] = "horoscope_ranking";
 $route['top3'] = "horoscope_ranking/getTop3";
 
-//星座トップページ
+//constellations
 $route['aries'] = "horoscope_detail";
 $route['taurus'] = "horoscope_detail";
 $route['gemini'] = "horoscope_detail";
@@ -58,7 +58,7 @@ $route['capricornus'] = "horoscope_detail";
 $route['aquarius'] = "horoscope_detail";
 $route['pisces'] = "horoscope_detail";
 
-//星座日別ページ
+//daily
 $route['aries/(:num)'] = "horoscope_detail/index/$1";
 $route['taurus/(:num)'] = "horoscope_detail/index/$1";
 $route['gemini/(:num)'] = "horoscope_detail/index/$1";
